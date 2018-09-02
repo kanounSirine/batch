@@ -1,0 +1,2 @@
+ INSERT INTO USER ( id,dept,name,salary,time) VALUES (1, 'Technology','sirine' ,12000 , '12/15/2017') ;
+ INSERT INTO USER  ( id,dept,name,salary,time)  VALUES  (2, 'kanoun','sirine'  ,1400 , '12/17/2018') ;

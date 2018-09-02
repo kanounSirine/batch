@@ -12,9 +12,9 @@ public class User {
     private String name;
     private String dept;
     private Integer salary;
-    private Date time;
+    private String time;
 
-    public User(Integer id, String name, String dept, Integer salary, Date time) {
+    public User(Integer id, String name, String dept, Integer salary, String time) {
         this.id = id;
         this.name = name;
         this.dept = dept;
@@ -63,16 +63,17 @@ public class User {
         sb.append("id=").append(id);
         sb.append(", name='").append(name).append('\'');
         sb.append(", dept='").append(dept).append('\'');
-        sb.append(", salary=").append(salary);
+        sb.append(", salary=").append(salary).append('\'');
+        sb.append(", time=").append(time);
         sb.append('}');
         return sb.toString();
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }
